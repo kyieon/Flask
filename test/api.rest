@@ -1,0 +1,15 @@
+###
+GET  http://192.168.102.171:5000/ HTTP/1.1
+
+###
+POST http://192.168.102.171:5000/auth HTTP/1.1
+content-type: application/json
+
+{
+    "username":"user1",
+    "password":"a"
+}
+
+###
+POST http://192.168.102.171:5000/test HTTP/1.1
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NzMxMDI3MTMsIm5iZiI6MTU3MzEwMjcxMywianRpIjoiOTNkMDc5NTktYTBlYy00ODljLWE4MWMtNDYwOTc1ZWYwZDdhIiwiZXhwIjoxNTczMTAzNjEzLCJpZGVudGl0eSI6InVzZXIxIiwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIn0.B_b3sto1em3VBdk-w4mhFuj8yReJYURv4GUISTX3viE
